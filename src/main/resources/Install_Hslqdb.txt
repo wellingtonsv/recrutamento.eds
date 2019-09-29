@@ -1,0 +1,13 @@
+Instalar HSQLDB:
+1 - Realizar o download do banco na url: https://sourceforge.net/projects/hsqldb/files/
+2 - Descompactar o zip no diretório de sua preferência.
+3 - Criar o banco demo demodb.
+	3.1 - Criar um arquivo chamado: server.properties:
+		server.database.0 = file:hsqldb/demodb
+		server.dbname.0 = testdb
+	3.2 - Rodar o banco de dados:
+		acessar o diretório: cd ..\hsqldb-2.5.0\hsqldb> java -classpath lib/hsqldb.jar org.hsqldb.server.Server
+		criar um database: cd C:\hsqldb-2.5.0\hsqldb> java -classpath lib/hsqldb.jar org.hsqldb.server.Server --database.0
+		rodar a gui de conexão com banco, criada após rodar o cmando acima: acessar o diretório ..\hsqldb-2.5.0\hsqldb\bin 
+		dentro dele executar o runManagerSwing.bat URL: jdbc:hsqldb:hsql://localhost/testdb User: SA
+		
